@@ -1,13 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { StackActions } from '@react-navigation/native';
+import { StyleSheet, Button, View } from 'react-native';
 
-export default function Explore() {
-  
-  let greeting = "Hello Explore";
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text>{greeting}</Text>
+      <StatusBar style="auto" />
     </View>
   );
 }

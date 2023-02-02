@@ -1,32 +1,19 @@
-import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default class Bookcase extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}>
-          Bookcase
-        </Text>
-      </View>
-    );
-  }
+export default function BookCase() {
+  return (
+    <View style={styles.container}>
+      <Text>Bookcase</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    backgroundColor: '#fff',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: 'center',
   },
-  title: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  }
 });
