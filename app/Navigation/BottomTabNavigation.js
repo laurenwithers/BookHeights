@@ -7,8 +7,6 @@ import AddBook from "../screens/AddBook";
 import Explore from "../screens/Explore";
 import BookCase from "../screens/Bookcase";
 import Progress from "../screens/Progress";
-import Login from "../screens/Login";
-import SignUp from"../screens/SignUp";
 import Home from "../screens/Home";
 
 
@@ -22,7 +20,6 @@ const TabsNavigator = () => {
       <Tabs.Screen name="AddBook" component={AddBook} />
       <Tabs.Screen name="Book Case" component={BookCase} />
       <Tabs.Screen name="Profile" component={Progress} />
-      <Tabs.Screen name="Login" component={Login} />
     </Tabs.Navigator>
     </NavigationContainer>
   );

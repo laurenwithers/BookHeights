@@ -1,15 +1,17 @@
-
-import TabsNavigator from "./app/Navigation/BottomTabNavigation";
-import StackNavigator from "./app/Navigation/StackNavigator";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-
-export default function App() {
-
-  return (
-    <SafeAreaProvider>
-      <TabsNavigator/>
-      <StackNavigator/>
-    </SafeAreaProvider>
-
+import React from 'react';
+import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import SignInScreen from './app/screens/SignInScreen';
+const App = () => {
+  return(
+    <SafeAreaView style ={styles.root}>
+      <SignInScreen/>
+    </SafeAreaView>
   );
-}
+};
+const styles = StyleSheet.create({
+  root:{
+    flex: 1,
+    backgroundColor: '#F9FBFC'
+  },
+});
+export default App;
